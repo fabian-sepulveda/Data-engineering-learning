@@ -1,3 +1,18 @@
+# Introduccion video
+
+En primera parte muestran como crear el entorno a través de un comando, aquí en un principio no lo entendí, pero se emplea una imagen "Postgres:13", desde docker hub. 
+
+**COMANDO**
+docker run -it `
+  -e POSTGRES_USER="root" `
+  -e POSTGRES_PASSWORD="root" `
+  -e POSTGRES_DB="ny_taxi" `
+  -v ${PWD}\ny_taxi_postgres_data:/var/lib/postgresql/data `
+  -p 5431:5432 `
+  postgres:13
+
+<pre> ```powershell docker run -it ` -e POSTGRES_USER="root" ` -e POSTGRES_PASSWORD="root" ` -e POSTGRES_DB="ny_taxi" ` -v ${PWD}\ny_taxi_postgres_data:/var/lib/postgresql/data ` -p 5431:5432 ` postgres:13 ``` </pre>
+
 # Docker Compose
 
 Nos permite crear todo el entorno
